@@ -1,0 +1,52 @@
+\documentclass[12pt,a4paper,twoside]{article}
+
+%%%%%%%%%%
+% IMPORT %
+%%%%%%%%%%
+\usepackage[utf8x]{inputenc}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{url}
+
+%%%%%%%%%%%%%%
+% FRONT PAGE %
+%%%%%%%%%%%%%%
+\author{PICARD DRUET David}
+\title{L'Answer Set Programming (ASP), du comment ça fonctionne.}
+\date{Quand ça sortira}
+
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+
+\section{En préambule}
+Ce document ne prétend pas à être exhaustif, ni même complet au sujet d'ASP. Son objectif est de permettre d'apprendre à utiliser, le plus aisément possible et en langue française, l'ASP et ses outils dédiés. Ceux utilisés ici sont développés par l'Université de Potsdam, et pour de plus amples informations, et la documentation complète (en anglais), allez voir directement sur la page du projet:
+\url{http://potassco.sourceforge.net}
+
+
+\section{De quoi donc est ce qu'on parle?}
+\subsection{Généralitées}
+L'idée de base d'ASP est de permettre ce qu'on appelle la \textbf{programmation par ensembles-réponses} (= answer set programming). C'est à dire que au lieu de décrire une procédure, on vas décrire des relations. Le problème est modélisé par un ensemble de règles, et non plus par un algorithme. C'est ce qu'on appelle une approche déclarative. 
+
+A partir de la modélisation écrite en langage logique, un premier outil, le \textit{grounder} va créer des formules booléennes. Ces formules vont être utilisées par le \textit{solver}, qui va rechercher l'ensemble des solutions possibles.
+
+Le grounder d'ASP utilisé ici est appelé \textit{gringo} et son solveur est \textit{clasp}. Un troisième outil \textit{clingo}, combine les fonctionnalités des deux. Ces trois outils sont codés en C++ et sont publiés sous la GNU General Public License, par l'Université de Potsdam.
+
+
+\section{Prérequis}
+
+\section{Principes}
+
+\section{Le language}
+
+\section{Ressources supplémentaires}
+
+\section{Liens divers et variés}
+
+\end{document}
